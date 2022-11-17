@@ -1,0 +1,178 @@
+body {
+    max-width: 100%;
+    font-family: "Itim", cursive;
+}
+
+h1 {
+    font-size: 40px;
+    padding-left: 30px;
+    margin: 0;
+}
+
+.mar {
+    margin-left: 60px;
+}
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+.ariere {
+    font-family: "Itim", cursive;
+    background-color: #d9d9d9;
+    width: 60px;
+    border-radius: 60px;
+    height: 60px;
+    margin-top: 25px;
+}
+
+.nav {
+    display: block;
+}
+
+.pointille {
+    font-weight: bold;
+    font-size: 50px;
+    margin: 0;
+    margin-left: 10px;
+}
+
+#deconnexion {
+    cursor: pointer;
+}
+
+#deconnexion:hover {
+    color: red;
+}
+
+.titre {
+    width: 100%;
+    font-family: "Itim", cursive;
+    font-size: 25px;
+    text-align: center;
+}
+
+.msgpub {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list {
+    background-color: #2564ff;
+    height: 800px;
+    width: fit-content;
+    margin-left: 400px;
+    border-radius: 100px;
+}
+.liste {
+    display: flex;
+}
+.listdis {
+    display: block;
+}
+.marg {
+    margin: 0;
+    margin-left: 500px;
+    margin-top: 15px;
+}
+
+.group {
+    font-weight: bolder;
+    font-family: "Itim", cursive;
+    color: white;
+
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+    font-size: 30px;
+    height: 50px;
+    background-color: #d9d9d9;
+    display: ruby;
+
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+
+img {
+    border-radius: 30px;
+}
+
+.discution {
+    background-color: #d9d9d9;
+    border-radius: 30px;
+    height: fit-content;
+    display: inline-flex;
+    margin-bottom: 30px;
+    width: fit-content;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: "Itim", cursive;
+    margin: 0 auto;
+}
+.nomdis {
+    font-size: 10px;
+    margin: 0 auto;
+}
+.heurnom {
+    display: flex;
+    justify-content: space-between;
+}
+.heur {
+    margin: 0 auto;
+}
+.entremsg {
+    display: grid;
+    margin-left: 100px;
+    margin-top: 60px;
+    height: 70vh;
+    border: 1px solid black;
+    overflow: scroll;
+}
+
+.mod {
+    margin-left: 20px;
+}
+
+.max {
+    max-width: 50px;
+}
+
+.gris {
+    text-align: start;
+}
+.bleu {
+    display: flex;
+    justify-self: center;
+    color: white;
+    background-color: #2564ff;
+    font-weight: bolder;
+    width: 200px;
+    border-radius: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bleu:hover {
+    background-color: #044bff;
+}
+input {
+    font-size: 20px;
+    color: #787878;
+    background-color: #d9d9d9;
+    border: none;
+    height: 40px;
+    margin-bottom: 50px;
+
+    border-radius: 60px;
+    font-family: "Itim", cursive;
+    width: 500px;
+}
+.form {
+    display: flex;
+}
+
+img {
+    border-radius: 30px;
+}

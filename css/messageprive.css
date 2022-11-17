@@ -1,0 +1,178 @@
+body {
+    font-family: "Itim", cursive;
+}
+
+.msgpub {
+    display: flex;
+    justify-content: space-between;
+}
+.max {
+    width: 50px;
+
+    border-radius: 50px;
+}
+.nav {
+    display: block;
+    background-color: white;
+}
+.pointier {
+    font-weight: bold;
+    font-size: 50px;
+    margin: 0;
+    margin-left: 10px;
+}
+.public {
+    margin-left: 20px;
+    font-size: 50px;
+    margin-top: 25px;
+}
+.ariere {
+    font-family: "Itim", cursive;
+    background-color: #d9d9d9;
+    width: 100px;
+    border-radius: 100px;
+    height: 100px;
+}
+.logo {
+    width: 80px;
+    border-radius: 80px;
+    height: 80px;
+}
+
+.list {
+    background-color: #2564ff;
+    height: 850px;
+    width: 330px;
+}
+.titre {
+    width: 100%;
+    font-family: "Itim", cursive;
+    font-size: 25px;
+    text-align: center;
+}
+
+.liste {
+    display: flex;
+}
+
+.listes {
+    display: block;
+}
+.amis {
+    font-weight: bolder;
+    font-family: "Itim", cursive;
+    color: white;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+    font-size: 30px;
+    height: 80px;
+    width: 100%;
+    background-color: #d9d9d9;
+    display: flex;
+
+    margin-bottom: 50px;
+}
+
+.image {
+    width: 50px;
+    border-radius: 50px;
+}
+
+img {
+    border-radius: 30px;
+}
+
+.discution {
+    background-color: #d9d9d9;
+    border-radius: 30px;
+    height: fit-content;
+    display: inline-flex;
+    margin-bottom: 30px;
+    width: fit-content;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: "Itim", cursive;
+    margin: 0 auto;
+}
+.nomdis {
+    font-size: 10px;
+    margin: 0 auto;
+}
+.heurnom {
+    display: flex;
+    justify-content: space-between;
+}
+.heur {
+    margin: 0 auto;
+}
+.entremsg {
+    display: grid;
+}
+
+.mod {
+    margin-left: 20px;
+}
+
+.max {
+    max-width: 50px;
+}
+
+.gris {
+    text-align: start;
+}
+.bleu {
+    display: flex;
+    justify-self: center;
+    color: white;
+    background-color: #2564ff;
+    font-weight: bolder;
+    width: 200px;
+    border-radius: 60px;
+    text-align: center;
+}
+input {
+    font-size: 20px;
+    color: #787878;
+    background-color: #d9d9d9;
+    border: none;
+    height: 40px;
+    margin-top: 100px;
+    margin-left: 20px;
+    border-radius: 60px;
+    font-family: "Itim", cursive;
+    width: 500px;
+}
+.form {
+    display: flex;
+}
+
+img {
+    border-radius: 30px;
+}
+
+.entremsgs {
+    display: flex;
+}
+
+.align {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    height: 70vh;
+    border: 1px solid black;
+    overflow: scroll;
+}
+
+button {
+    font-family: "Itim", cursive;
+    color: white;
+    background-color: #2564ff;
+    font-weight: bolder;
+    width: 150px;
+    height: 150px;
+    border-radius: 60px;
+    font-size: 20px;
+}

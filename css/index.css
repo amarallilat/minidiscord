@@ -1,0 +1,101 @@
+body {
+    background-color: #2564ff;
+}
+
+.titre {
+    display: flex;
+    margin-bottom: 100px;
+}
+#espace {
+    margin-left: 300px;
+    font-weight: bold;
+    font-size: 60px;
+    background-color: white;
+    border-radius: 60px;
+    font-family: "Itim", cursive;
+}
+
+.grisclair {
+    background-color: #36393f;
+    width: 40%;
+    font-size: 40px;
+    font-weight: center;
+    border-radius: 60px;
+    height: 700px;
+    margin-left: 10px;
+    font-family: "Itim", cursive;
+}
+
+p {
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-family: "Itim", cursive;
+}
+.aranger {
+    display: grid;
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+}
+
+.nomprenom {
+    display: flex;
+    display: block ruby;
+}
+
+input {
+    font-size: 20px;
+    color: #b9bbbe;
+    background-color: #202225;
+    border: none;
+    height: 40px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    border-radius: 60px;
+    font-family: "Itim", cursive;
+}
+
+.reste {
+    display: contents;
+    justify-content: center;
+    font-family: "Itim", cursive;
+}
+
+.bleu {
+    display: flex;
+    justify-self: center;
+    color: white;
+    background-color: #2564ff;
+    font-weight: bolder;
+    width: 200px;
+    border-radius: 60px;
+}
+
+.deuxgris {
+    display: flex;
+}
+.deux {
+    margin-left: 270px;
+}
+
+h3 {
+    font-size: 28px;
+    color: #b9bbbe;
+    display: flex;
+    justify-content: center;
+    font-family: "Itim", cursive;
+}
+
+.cnx {
+    display: grid;
+    justify-content: center;
+}
+.form {
+    width: 400px;
+    font-family: "Itim", cursive;
+}
