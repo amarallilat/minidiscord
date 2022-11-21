@@ -110,7 +110,10 @@ function affichageMessagePrive() {
             message.avatar
         }" alt="fvvfvffvee"/><div><div class="heurnom"><p class="nomdis">${
             message.pseudo
-        }</p><p class="heur">${message.heure.slice(11, 16)}</p></div><h2>${
+        }</p><p class="heur">${message.heure.slice(
+            5,
+            10
+        )} ${message.heure.slice(11, 16)}</p></div><h2>${
             message.contenu
         }</h2></div></div>`;
     }

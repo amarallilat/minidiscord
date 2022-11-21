@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+}
+
 body {
     max-width: 100%;
     font-family: "Itim", cursive;
@@ -47,6 +51,7 @@ h1 {
 
 .titre {
     width: 100%;
+    margin-bottom: 100px;
     font-family: "Itim", cursive;
     font-size: 25px;
     text-align: center;
@@ -54,14 +59,14 @@ h1 {
 
 .msgpub {
     display: flex;
-    justify-content: space-between;
 }
 
 .list {
+    display: flex;
+    flex-direction: column;
     background-color: #2564ff;
-    height: 800px;
+    height: 100vh;
     width: fit-content;
-    margin-left: 400px;
     border-radius: 100px;
 }
 .liste {
@@ -71,9 +76,10 @@ h1 {
     display: block;
 }
 .marg {
-    margin: 0;
+    /* margin: 0;
     margin-left: 500px;
-    margin-top: 15px;
+    margin-top: 15px; */
+    margin-bottom: 30px !important;
 }
 
 .group {
@@ -86,8 +92,7 @@ h1 {
     font-size: 30px;
     height: 50px;
     background-color: #d9d9d9;
-    display: ruby;
-
+    display: flex;
     margin-bottom: 30px;
     border-radius: 30px;
 }
@@ -123,10 +128,10 @@ h2 {
     margin: 0 auto;
 }
 .entremsg {
-    display: grid;
-    margin-left: 100px;
-    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
     height: 70vh;
+    width: 100%;
     border: 1px solid black;
     overflow: scroll;
 }
