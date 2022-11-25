@@ -54,7 +54,7 @@ if(!isset($_SESSION["id"])) {
                 <!-- <button id="neutre">Neutre</button> -->
             </div>
 
-            <div id="aside" class="list"></div>
+            <!-- <div id="aside" class="list"></div> -->
         </div>
         <script src="home.js"></script>
     </body>

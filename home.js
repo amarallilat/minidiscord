@@ -1,6 +1,6 @@
 let users = [];
 let messages = [];
-let aside = document.querySelector("#aside");
+// let aside = document.querySelector("#aside");
 let main = document.querySelector("#main");
 let submit = document.querySelector("#submitMessagePublic");
 submit.addEventListener("click", envoyerMessagePublic);
@@ -13,39 +13,39 @@ messagePublic.addEventListener("keypress", enter);
 //     messagePublic.value += "\ud83d\ude10";
 // });
 
-async function getAllUsers() {
-    const baseUrl = "apimessagerie.php?action=getAllUsers";
-    try {
-        let donnees = await fetch(baseUrl);
-        if (!donnees.ok) {
-            throw new Error(donnees.status);
-        } else {
-            let data = await donnees.json();
-            users = data;
-            affichageUsers();
-        }
-    } catch (e) {
-        if (e) {
-            console.error(e);
-        }
-    }
-}
+// async function getAllUsers() {
+//     const baseUrl = "apimessagerie.php?action=getAllUsers";
+//     try {
+//         let donnees = await fetch(baseUrl);
+//         if (!donnees.ok) {
+//             throw new Error(donnees.status);
+//         } else {
+//             let data = await donnees.json();
+//             users = data;
+//             affichageUsers();
+//         }
+//     } catch (e) {
+//         if (e) {
+//             console.error(e);
+//         }
+//     }
+// }
 
-function affichageUsers() {
-    let html = `<p class="titre">Listes d'Amis</p>`;
-    for (const user of users) {
-        html += `<div class="group"><img class="max" src="./images/${user.avatar}" alt="fffff" /><p>${user.prenom} ${user.nom}</p></div>`;
-    }
-    aside.innerHTML = html;
-    let abcd = document.querySelectorAll(".group");
-    for (let i = 0; i < abcd.length; i++) {
-        abcd[i].addEventListener("click", () => {
-            document.location.href = `messageprive.php?id=${users[i].id}`;
-        });
-    }
-}
+// function affichageUsers() {
+//     let html = `<p class="titre">Listes d'Amis</p>`;
+//     for (const user of users) {
+//         html += `<div class="group"><img class="max" src="./images/${user.avatar}" alt="fffff" /><p>${user.prenom} ${user.nom}</p></div>`;
+//     }
+//     aside.innerHTML = html;
+//     let abcd = document.querySelectorAll(".group");
+//     for (let i = 0; i < abcd.length; i++) {
+//         abcd[i].addEventListener("click", () => {
+//             document.location.href = `messageprive.php?id=${users[i].id}`;
+//         });
+//     }
+// }
 
-getAllUsers();
+// getAllUsers();
 
 async function getAllMessages() {
     const baseUrl = "apimessagerie.php?action=selectMessagesPublics";
