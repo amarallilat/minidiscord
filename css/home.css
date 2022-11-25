@@ -65,7 +65,7 @@ h1 {
 .list {
     display: flex;
     flex-direction: column;
-    background-color: #2564ff;
+    background-color: yellow;
     height: 100vh;
     width: fit-content;
     border-radius: 100px;
