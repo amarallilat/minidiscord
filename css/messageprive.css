@@ -47,11 +47,13 @@ a {
     border-radius: 80px;
     height: 80px;
 }
-
+#deconnexion:hover {
+    color: red;
+}
 .list {
     background-color: #202225;
-    height: 850px;
-    width: 330px;
+    height: fit-content;
+    width: fit-content;
     border-radius: 20px;
 }
 .titre {

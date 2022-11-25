@@ -12,6 +12,10 @@
             href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        />
         <link rel="stylesheet" href="./css/messageprive.css" />
     </head>
     <body>
@@ -29,6 +33,8 @@
               <a href="#">
                 <img class="logoG" src="./images/luffi.jpg" alt="luffi">
               </a>
+              <p class="pointier">----</p>
+              <i id="deconnexion" class="fa-solid fa-5x fa-power-off"></i>
             </div>
             <div class="liste">
                 <div class="list">
