@@ -17,27 +17,30 @@
     <body>
         <div class="liste">
             <div class="nav">
+         
+                <a href="messageprive.php">
                 <img class="ariere" src="./images/logo.png" alt="logoo" />
-                <p class="pointier">----</p>
-                <a href="home.php">
-                    <h1 class="public">G</h1>
                 </a>
                 <p class="pointier">----</p>
-                <img class="logo" src="./images/amar.jpeg" alt="logoo" />
+                <a href="home.php">
+                    <h1 class="public">P</h1>
+                </a>
                 <p class="pointier">----</p>
-                <img class="logo" src="./images/amine.jpeg" alt="logoo" />
-                <p class="pointier">----</p>
-                <img class="logo" src="./images/index.jpeg" alt="logoo" />
-                <p class="pointier">----</p>
-                <img class="logo" src="./images/abdou.jpg" alt="logoo" />
-
-                <p class="pointier">----</p>
-                <img class="logo" src="./images/zakarialogo.gif" alt="logoo" />
+              <a href="#">
+                <img class="logoG" src="./images/luffi.jpg" alt="luffi">
+              </a>
             </div>
             <div class="liste">
                 <div class="list">
+               
                     <p class="titre">Les messages privés</p>
+                    
+
                     <div class="entremsg">
+                        <div>
+                           <input class="recherches" type="text"placeholder="Recherches:">   
+                        </div>
+                  
                         <div class="amis">
                             <p>Amar ALLILAT</p>
 

@@ -1,7 +1,15 @@
 body {
     font-family: "Itim", cursive;
+    background-color: #36393f;
 }
-
+a {
+    text-decoration: none;
+    color: black;
+}
+.logoG {
+    width: 100px;
+    border-radius: 50px;
+}
 .msgpub {
     display: flex;
     justify-content: space-between;
@@ -13,7 +21,8 @@ body {
 }
 .nav {
     display: block;
-    background-color: white;
+    background-color: #f2cc78;
+    border-radius: 20px;
 }
 .pointier {
     font-weight: bold;
@@ -22,9 +31,8 @@ body {
     margin-left: 10px;
 }
 .public {
-    margin-left: 20px;
+    margin-left: 40px;
     font-size: 50px;
-    margin-top: 25px;
 }
 .ariere {
     font-family: "Itim", cursive;
@@ -34,21 +42,24 @@ body {
     height: 100px;
 }
 .logo {
+    margin-top: 50px;
     width: 80px;
     border-radius: 80px;
     height: 80px;
 }
 
 .list {
-    background-color: #2564ff;
+    background-color: #202225;
     height: 850px;
     width: 330px;
+    border-radius: 20px;
 }
 .titre {
     width: 100%;
     font-family: "Itim", cursive;
-    font-size: 25px;
+    font-size: 40px;
     text-align: center;
+    color: white;
 }
 
 .liste {
@@ -126,15 +137,15 @@ h2 {
 .bleu {
     display: flex;
     justify-self: center;
-    color: white;
-    background-color: #2564ff;
+    color: black;
+    background-color: #f2cc78;
     font-weight: bolder;
     width: 200px;
     border-radius: 60px;
     text-align: center;
 }
 input {
-    font-size: 20px;
+    font-size: 30px;
     color: #787878;
     background-color: #d9d9d9;
     border: none;
@@ -168,11 +179,17 @@ img {
 
 button {
     font-family: "Itim", cursive;
-    color: white;
-    background-color: #2564ff;
+    color: black;
+    background-color: #f2cc78;
     font-weight: bolder;
     width: 150px;
     height: 150px;
     border-radius: 60px;
     font-size: 20px;
+}
+
+.recherches {
+    width: 300px;
+    margin: 0;
+    margin-bottom: 30px;
 }

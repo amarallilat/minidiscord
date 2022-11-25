@@ -1,10 +1,7 @@
-* {
-    margin: 0;
-}
-
 body {
     max-width: 100%;
     font-family: "Itim", cursive;
+    background-color: #36393f;
 }
 
 h1 {
@@ -21,17 +18,24 @@ h1 {
     cursor: pointer;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
 .ariere {
     font-family: "Itim", cursive;
+    font-size: 60px;
     background-color: #d9d9d9;
-    width: 60px;
+    width: 50px;
     border-radius: 60px;
-    height: 60px;
-    margin-top: 25px;
+    height: 70px;
+    margin-left: 5px;
 }
 
 .nav {
     display: block;
+    background-color: #f2cc78;
+    border-radius: 12px;
 }
 
 .pointille {
@@ -51,9 +55,10 @@ h1 {
 
 .titre {
     width: 100%;
+    color: white;
     margin-bottom: 100px;
     font-family: "Itim", cursive;
-    font-size: 25px;
+    font-size: 40px;
     text-align: center;
 }
 
@@ -62,20 +67,6 @@ h1 {
     justify-content: space-between;
 }
 
-.list {
-    display: flex;
-    flex-direction: column;
-    background-color: yellow;
-    height: 100vh;
-    width: fit-content;
-    border-radius: 100px;
-}
-.listedis {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 .marg {
     /* margin: 0;
     margin-left: 500px;
@@ -139,10 +130,12 @@ h2 {
     display: flex;
     flex-direction: column;
     height: 80vh;
-    max-width: 100%;
+    max-width: 90%;
     border: 1px solid black;
+    margin-left: 20px;
     overflow-y: scroll;
     word-break: break-word;
+    padding-left: 50px;
 }
 
 .mod {
@@ -159,8 +152,8 @@ h2 {
 .bleu {
     display: flex;
     justify-self: center;
-    color: white;
-    background-color: #2564ff;
+    color: black;
+    background-color: #f2cc78;
     font-weight: bolder;
     width: 200px;
     border-radius: 60px;
@@ -169,10 +162,10 @@ h2 {
 }
 
 .bleu:hover {
-    background-color: #044bff;
+    background-color: #f2cc78;
 }
 input {
-    font-size: 20px;
+    font-size: 30px;
     color: #787878;
     background-color: #d9d9d9;
     border: none;
@@ -184,4 +177,11 @@ input {
 }
 .form {
     display: flex;
+    justify-content: end;
+    margin-top: 50px;
+}
+
+.logoG {
+    width: 100px;
+    border-radius: 50px;
 }

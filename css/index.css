@@ -10,7 +10,7 @@ body {
     margin-left: 300px;
     font-weight: bold;
     font-size: 60px;
-    background-color: white;
+
     border-radius: 60px;
     font-family: "Itim", cursive;
 }
@@ -69,12 +69,13 @@ input {
 .bleu {
     display: flex;
     justify-self: center;
-    color: white;
-    background-color: #2564ff;
+    color: black;
+    background-color: #f2cc78;
     font-weight: bolder;
     width: 200px;
     border-radius: 60px;
     cursor: pointer;
+    font-size: 30px;
 }
 
 .deuxgris {

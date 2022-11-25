@@ -31,14 +31,23 @@ if(!isset($_SESSION["id"])) {
     <body>
         <div class="msgpub">
             <div class="nav">
-                <h1 class="ariere">P</h1>
-                <p class="pointille">----</p>
-                <img
+                <a href="messageprive.php">
+            <img
                     class="logo"
                     src="./images/logo.png"
                     alt="logoo"
                 />
+                </a>
                 <p class="pointille">----</p>
+                <a href="">
+                    <h1 class="ariere">P</h1> 
+                </a>
+               
+                <p class="pointille">----</p>  
+                    <img  class="logoG" src="./images/luffi.jpg" alt="">
+
+                <p class="pointille">----</p>
+                
                 <i id="deconnexion" class="fa-solid fa-5x fa-power-off"></i>
             </div>
 
@@ -48,7 +57,7 @@ if(!isset($_SESSION["id"])) {
                     <div id="main" class="entremsg"></div>
                 </div>
                 <div class="form">
-                    <input id="messagePublic" class="gris" type="text" name="Messages" placeholder="Ecrire un message public..."/>
+                    <input id="messagePublic" class="gris" type="text" name="Messages" placeholder="Écrire un message public..."/>
                     <input id="submitMessagePublic" class="bleu" type="submit" value="Envoyer"/>
                 </div>
                 <!-- <button id="neutre">Neutre</button> -->
