@@ -4,10 +4,8 @@ let aside = document.querySelector("#aside");
 let main = document.querySelector("#main");
 let submit = document.querySelector("#submitMessagePublic");
 submit.addEventListener("click", envoyerMessagePublic);
-let deconnexion = document.querySelector("#deconnexion");
-deconnexion.addEventListener("click", () => {
-    document.location.href = "deconnexion.php";
-});
+let deconnexionBtn = document.querySelector("#deconnexion");
+deconnexionBtn.addEventListener("click", deconnexion);
 let messagePublic = document.querySelector("#messagePublic");
 messagePublic.addEventListener("keypress", enter);
 // let neutre = document.querySelector("#neutre");
@@ -16,7 +14,7 @@ messagePublic.addEventListener("keypress", enter);
 // });
 
 async function getAllUsers() {
-    const baseUrl = "getAllUsers.php";
+    const baseUrl = "apimessagerie.php?action=getAllUsers";
     try {
         let donnees = await fetch(baseUrl);
         if (!donnees.ok) {
@@ -50,7 +48,7 @@ function affichageUsers() {
 getAllUsers();
 
 async function getAllMessages() {
-    const baseUrl = "getAllMessages.php";
+    const baseUrl = "apimessagerie.php?action=selectMessagesPublics";
     try {
         let donnees = await fetch(baseUrl);
         if (!donnees.ok) {
@@ -74,7 +72,7 @@ function affichageMessages() {
     console.log(messagesPublics);
     let html = "";
     for (const messagePub of messagesPublics) {
-        html += `<div class="discution"><img width="50px" src="./images/${
+        html += `<div class="discution"><img class="avatar" width="50px" src="./images/${
             messagePub.avatar
         }" alt="fvvfvffvee"/><div><div class="heurnom"><p class="nomdis">${
             messagePub.pseudo
@@ -107,5 +105,24 @@ async function envoyerMessagePublic() {
 function enter(e) {
     if (e.keyCode == 13) {
         envoyerMessagePublic();
+    }
+}
+
+async function deconnexion() {
+    let url = "apimessagerie.php?action=deconnexion";
+    try {
+        let donnees = await fetch(url);
+        if (!donnees.ok) {
+            throw new Error(donnees.status);
+        } else {
+            let data = await donnees.json();
+            if (data.message == "deconnexion") {
+                document.location.href = "index.html";
+            }
+        }
+    } catch (e) {
+        if (e) {
+            console.error(e);
+        }
     }
 }

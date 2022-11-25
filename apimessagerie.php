@@ -14,6 +14,12 @@ switch ($_GET['action']) {
     case 'test':
         $retour = test();
         break;
+    case 'getAllUsers':
+        $retour = getAllUsers();
+        break;
+    case 'selectMessagesPublics':
+        $retour = selectMessagesPublics();
+        break;
     case 'selectCompleteInfoUser':
         $retour = selectCompleteInfoUser();
         break;
@@ -35,6 +41,9 @@ switch ($_GET['action']) {
     case 'connexion':
         $retour = connexion($_POST);
         break;
+    case 'deconnexion':
+        $retour = deconnexion();
+        break;
     default:
         $retour = null;
         http_response_code(404);   
@@ -46,6 +55,16 @@ echo json_encode($retour);
 function test()
 {
     $test = ["message" => "Bien reçu"];
+    return $test;
+}
+
+function deconnexion()
+{
+    $_SESSION = [];
+
+    session_destroy();
+
+    $test = ["message" => "deconnexion"];
     return $test;
 }
 
@@ -165,5 +184,26 @@ function selectCompleteInfoUser() {
         "id" => $id
     ]);
     $resultat = $select->fetch(PDO::FETCH_ASSOC);
+    return $resultat;
+}
+
+function selectMessagesPublics() {
+    require('bddconfig.php');
+
+    $sql = "select * from message join utilisateur on utilisateur.id = id_expediteur order by heure";
+    $select = $pdo->prepare($sql);
+    $select->execute();
+    $resultat = $select->fetchAll(PDO::FETCH_ASSOC);
+
+    return $resultat;
+}
+
+function getAllUsers() {
+    require('bddconfig.php');
+    $sql = "select * from utilisateur where not id = :id order by pseudo";
+    $select = $pdo->prepare($sql);
+    $select->execute(["id" => $_SESSION["id"]]);
+    $resultat = $select->fetchAll(PDO::FETCH_ASSOC);
+    
     return $resultat;
 }

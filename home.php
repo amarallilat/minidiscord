@@ -42,16 +42,19 @@ if(!isset($_SESSION["id"])) {
                 <i id="deconnexion" class="fa-solid fa-5x fa-power-off"></i>
             </div>
 
-            <div class="liste">
-                <div class="listedis">
+            <div class="listedis">
+                <div>
                     <p class="titre marg">Messages Publics</p>
                     <div id="main" class="entremsg"></div>
-                    <div class="form"><input id="messagePublic" class="gris" type="text" name="Messages" placeholder="Ecrire un message public..."/><input id="submitMessagePublic" class="bleu" type="submit" value="Envoyer"/></div>
-                    <!-- <button id="neutre">Neutre</button> -->
                 </div>
-
-                <div id="aside" class="list"></div>
+                <div class="form">
+                    <input id="messagePublic" class="gris" type="text" name="Messages" placeholder="Ecrire un message public..."/>
+                    <input id="submitMessagePublic" class="bleu" type="submit" value="Envoyer"/>
+                </div>
+                <!-- <button id="neutre">Neutre</button> -->
             </div>
+
+            <div id="aside" class="list"></div>
         </div>
         <script src="home.js"></script>
     </body>

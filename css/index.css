@@ -74,6 +74,7 @@ input {
     font-weight: bolder;
     width: 200px;
     border-radius: 60px;
+    cursor: pointer;
 }
 
 .deuxgris {
