@@ -42,56 +42,11 @@
                     <p class="titre">Les messages privés</p>
                     
 
-                    <div class="entremsg">
+                    <div id="listeUsers" class="entremsg">
                         <div>
                            <input class="recherches" type="text"placeholder="Recherches:">   
                         </div>
-                  
-                        <div class="amis">
-                            <p>Amar ALLILAT</p>
 
-                            <img
-                                class="max"
-                                src="./images/amar.jpeg"
-                                alt="fffff"
-                            />
-                        </div>
-
-                        <div class="amis">
-                            <p>Amine ILLOUL</p>
-                            <img
-                                class="max"
-                                src="./images/amine.jpeg"
-                                alt="fffff"
-                            />
-                        </div>
-
-                        <div class="amis">
-                            <p>abdou salam</p>
-                            <img
-                                class="max"
-                                src="./images/abdou.jpg"
-                                alt="fffff"
-                            />
-                        </div>
-
-                        <div class="amis">
-                            <p>Sammoussa KWALA</p>
-                            <img
-                                class="max"
-                                src="./images/index.jpeg"
-                                alt="fffff"
-                            />
-                        </div>
-
-                        <div class="amis">
-                            <p>Zakaria HANAFI</p>
-                            <img
-                                class="max"
-                                src="./images/zakarialogo.gif"
-                                alt="fffff"
-                            />
-                        </div>
                     </div>
                 </div>
 

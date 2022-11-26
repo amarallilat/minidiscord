@@ -176,7 +176,7 @@ img {
     margin-left: 50px;
     height: 70vh;
     border: 1px solid black;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 button {

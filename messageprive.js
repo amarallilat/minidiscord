@@ -1,7 +1,9 @@
 let message = document.querySelector("#message");
 message.addEventListener("keypress", enter);
+let listeUsers = document.querySelector("#listeUsers");
 let messagesPrives = document.querySelector("#messagesPrives");
 let userDiv = document.querySelector("#user");
+let users = [];
 let messages = [];
 let session = [];
 let user = [];
@@ -17,8 +19,10 @@ async function getSession() {
             let aaa = await session.json();
             session = aaa;
             console.log(session);
-            selectInfoUser();
-            selectMessagePrive();
+            if (window.location.href.split("?id=")[1] != undefined) {
+                selectInfoUser();
+                selectMessagePrive();
+            }
         }
     } catch (e) {
         if (e) {
@@ -26,6 +30,40 @@ async function getSession() {
         }
     }
 }
+
+async function getAllUsers() {
+    const baseUrl = "apimessagerie.php?action=getAllUsers";
+    try {
+        let donnees = await fetch(baseUrl);
+        if (!donnees.ok) {
+            throw new Error(donnees.status);
+        } else {
+            let data = await donnees.json();
+            users = data;
+            affichageUsers();
+        }
+    } catch (e) {
+        if (e) {
+            console.error(e);
+        }
+    }
+}
+
+function affichageUsers() {
+    let html = `<div><input class="recherches" type="text"placeholder="Recherches:"></div>`;
+    for (const user of users) {
+        html += `<div class="amis group"><p>${user.prenom} ${user.nom}</p><img class="max" src="./images/${user.avatar}" alt="fffff"/></div>`;
+    }
+    listeUsers.innerHTML = html;
+    let abcd = document.querySelectorAll(".group");
+    for (let i = 0; i < abcd.length; i++) {
+        abcd[i].addEventListener("click", () => {
+            document.location.href = `messageprive.php?id=${users[i].id}`;
+        });
+    }
+}
+
+getAllUsers();
 
 async function envoyerMessagePrive() {
     let id_recepteur = window.location.href.split("?id=")[1];
@@ -44,6 +82,7 @@ async function envoyerMessagePrive() {
 
 async function selectInfoUser() {
     let id_expediteur = window.location.href.split("?id=")[1];
+    console.log(id_expediteur);
     let url = "apimessagerie.php?action=selectInfoUser";
     let donnees = new FormData();
     donnees.append("id_expediteur", id_expediteur);
