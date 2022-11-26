@@ -41,7 +41,7 @@
             <div class="liste">
                 <div class="list">
                
-                    <p class="titre">Les messages privés</p>
+                    <p class="titre"> Messages privés</p>
                     
 
                     <div id="listeUsers" class="entremsg">
