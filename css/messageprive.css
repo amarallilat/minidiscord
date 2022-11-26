@@ -82,7 +82,7 @@ a {
     width: 100%;
     background-color: #d9d9d9;
     display: flex;
-
+    cursor: pointer;
     margin-bottom: 50px;
 }
 
@@ -194,4 +194,5 @@ button {
     width: 300px;
     margin: 0;
     margin-bottom: 30px;
+    margin-left: 30px;
 }

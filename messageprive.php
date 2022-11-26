@@ -34,7 +34,9 @@
                 <img class="logoG" src="./images/luffi.jpg" alt="luffi">
               </a>
               <p class="pointier">----</p>
+              <a href="index.html">
               <i id="deconnexion" class="fa-solid fa-5x fa-power-off"></i>
+              </a>
             </div>
             <div class="liste">
                 <div class="list">
