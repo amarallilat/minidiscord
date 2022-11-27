@@ -163,4 +163,5 @@ function affichageMessagePrive() {
 function affichageUser() {
     let html = `<img width="200px" src="./images/${user.avatar}" alt="crgfuihfd"/><h2>${user.prenom} ${user.nom}</h2><h2>(${user.pseudo})</h2><a href="travail4.html?id=${user.id}"><button>plus d'information</button></a>`;
     userDiv.innerHTML = html;
+    message.placeholder = `Ecrire un message à ${user.prenom} ideuh...`;
 }
