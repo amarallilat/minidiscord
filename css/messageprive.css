@@ -16,7 +16,6 @@ a {
 }
 .max {
     width: 50px;
-
     border-radius: 50px;
 }
 .nav {
@@ -91,10 +90,6 @@ a {
     border-radius: 50px;
 }
 
-img {
-    border-radius: 30px;
-}
-
 .discution {
     background-color: #d9d9d9;
     border-radius: 30px;
@@ -127,10 +122,6 @@ h2 {
 
 .mod {
     margin-left: 20px;
-}
-
-.max {
-    max-width: 50px;
 }
 
 .gris {
