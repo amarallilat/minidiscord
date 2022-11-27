@@ -104,7 +104,7 @@ h2 {
     font-size: 30px;
     font-weight: bolder;
     font-family: "Itim", cursive;
-    margin: 0 auto;
+    margin: 0;
 }
 .nomdis {
     font-size: 10px;
@@ -194,4 +194,12 @@ button {
     flex-direction: column;
     justify-content: center;
     padding-left: 150px;
+}
+
+.plusinfo {
+    margin-top: 50px;
+}
+
+.photos {
+    margin-bottom: 50px;
 }
