@@ -76,11 +76,12 @@ a {
     color: white;
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: black;
-    font-size: 30px;
+    font-size: 25px;
     height: 80px;
     width: 100%;
     background-color: #d9d9d9;
     display: flex;
+    justify-content: center;
     cursor: pointer;
     margin-bottom: 50px;
 }
