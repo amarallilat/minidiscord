@@ -31,7 +31,7 @@ if(!isset($_SESSION["id"])) {
     <body>
         <div class="msgpub">
             <div class="nav">
-                <a href="messageprive.php">
+                <a href="travail5.html">
             <img
                     class="logo"
                     src="./images/logo.png"

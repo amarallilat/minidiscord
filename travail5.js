@@ -1,23 +1,16 @@
-let user = [];
+let users = [];
+let listeUsers = document.querySelector("#listeUsers");
 
-async function getUserInfo() {
-    let id_expediteur = window.location.href.split("?id=")[1];
-    let url = "apimessagerie.php?action=selectCompleteInfoUser";
-    let donnees = new FormData();
-    donnees.append("id_expediteur", id_expediteur);
-    let data = {
-        method: "post",
-        body: donnees,
-    };
-
+async function getAllUsers() {
+    const baseUrl = "apimessagerie.php?action=getAllUsers";
     try {
-        let donnees = await fetch(url, data);
+        let donnees = await fetch(baseUrl);
         if (!donnees.ok) {
             throw new Error(donnees.status);
         } else {
             let data = await donnees.json();
-            user = data;
-            console.log(user);
+            users = data;
+            affichageUsers();
         }
     } catch (e) {
         if (e) {
@@ -25,4 +18,19 @@ async function getUserInfo() {
         }
     }
 }
-getUserInfo();
+
+function affichageUsers() {
+    let html = `<div><input class="recherches" type="text"placeholder="Recherches:"></div>`;
+    for (const user of users) {
+        html += `<div class="amis group"><p>${user.prenom} ${user.nom}</p><img class="max" src="./images/${user.avatar}" alt="fffff"/></div>`;
+    }
+    listeUsers.innerHTML = html;
+    let abcd = document.querySelectorAll(".group");
+    for (let i = 0; i < abcd.length; i++) {
+        abcd[i].addEventListener("click", () => {
+            document.location.href = `messageprive.php?id=${users[i].id}`;
+        });
+    }
+}
+
+getAllUsers();
