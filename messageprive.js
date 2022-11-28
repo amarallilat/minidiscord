@@ -161,7 +161,25 @@ function affichageMessagePrive() {
 }
 
 function affichageUser() {
-    let html = `<img class="photos" width="200px" src="./images/${user.avatar}" alt="crgfuihfd"/><h2>${user.prenom} ${user.nom}</h2><h2 style="text-align: center;">(${user.pseudo})</h2><a href="travail4.html?id=${user.id}"><button class="plusinfo">plus d'information</button></a>`;
+    let html = `<img class="photos" width="200px" src="./images/${user.avatar}" alt="crgfuihfd"/><h2>${user.prenom} ${user.nom}</h2><h2 style="text-align: center;">(${user.pseudo})</h2><button id="btnPlus" class="plusinfo">plus d'information</button>`;
     userDiv.innerHTML = html;
     message.placeholder = `Ecrire un message à ${user.prenom} ideuh...`;
+    let btnPlus = document.querySelector("#btnPlus");
+    btnPlus.onclick = popup;
+}
+
+function popup() {
+    let html = `<div class="popup"></div><div class="fadePopup"></div>`;
+    document.body.innerHTML += html;
+    let fadePopup = document.querySelector(".fadePopup");
+    fadePopup.addEventListener("click", closepop);
+    let btnPlus = document.querySelector("#btnPlus");
+    btnPlus.onclick = popup;
+}
+
+function closepop() {
+    let popup = document.querySelector(".popup");
+    let fadePopup = document.querySelector(".fadePopup");
+    document.body.removeChild(popup);
+    document.body.removeChild(fadePopup);
 }

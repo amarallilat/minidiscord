@@ -203,3 +203,26 @@ button {
 .photos {
     margin-bottom: 50px;
 }
+
+.popup {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    z-index: 99999;
+    width: 500px;
+    height: 500px;
+    margin-left: -250px;
+    background-color: #fafafa;
+    border-radius: 10px;
+}
+
+.fadePopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #22252e;
+    opacity: 0.8;
+    z-index: 9999;
+}
