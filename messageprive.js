@@ -169,7 +169,7 @@ function affichageUser() {
 }
 
 function popup() {
-    let html = `<div class="popup"></div><div class="fadePopup"></div>`;
+    let html = `<div class="popup"><div class="parametre"><i class="fa-solid fa-circle-xmark pad"></i><div><p>Logo:</p><img class="logoplusinfo" src="./images/${user.avatar}" alt="log" /></div><div class="lst"><p>Prénom:${user.prenom}</p><p>Nom:${user.nom}</p><p>Pseudo:${user.pseudo}</p><p>date de naissance: 09/06/2000</p><p>Âge: 22 ans</p></div></div></div><div class="fadePopup"></div>`;
     document.body.innerHTML += html;
     let fadePopup = document.querySelector(".fadePopup");
     fadePopup.addEventListener("click", closepop);

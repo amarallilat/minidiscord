@@ -212,8 +212,10 @@ button {
     width: 500px;
     height: 500px;
     margin-left: -250px;
-    background-color: #fafafa;
+    background-color: #f2cc78;
     border-radius: 10px;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .fadePopup {
@@ -225,4 +227,30 @@ button {
     background: #22252e;
     opacity: 0.8;
     z-index: 9999;
+}
+.parametre {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+/**/
+.logoplusinfo {
+    width: 100px;
+    border-radius: 100px;
+    height: 100px;
+}
+
+.pad {
+    padding: 10px;
+    height: 50px;
+}
+
+.fa-solid:hover {
+    color: red;
+}
+
+.lst {
+    padding-left: 150px;
+    padding-top: 100px;
 }
