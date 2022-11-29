@@ -45,11 +45,22 @@
                     
 
                     <div id="listeUsers" class="entremsg">
-                        <div>
-                           <input class="recherches" type="text"placeholder="Recherches:">   
+                        <div class="aligner">
+                            
+                           <input class="recherches" type="text"placeholder="Recherches:"
+                           >
+                           <div>
+                             <i class="fa-solid fa-magnifying-glass"></i>
+                           </div>
+                          
+                           
+                           
+                        
                         </div>
+                       
 
                     </div>
+                     
                 </div>
 
                 <div class="entremsgs">

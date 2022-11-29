@@ -117,9 +117,6 @@ h2 {
 .heur {
     margin: 0 auto;
 }
-.entremsg {
-    display: grid;
-}
 
 .mod {
     margin-left: 20px;
@@ -184,9 +181,8 @@ button {
 
 .recherches {
     width: 300px;
-    margin: 0;
+    margin: 0 auto;
     margin-bottom: 30px;
-    margin-left: 30px;
 }
 
 .info {
@@ -261,4 +257,7 @@ button {
 }
 .plog {
     padding-top: 50px;
+}
+.aligner {
+    display: flex;
 }
