@@ -169,12 +169,14 @@ function affichageUser() {
 }
 
 function popup() {
-    let html = `<div class="popup"><div class="parametre"><i class="fa-solid fa-circle-xmark pad"></i><div><p class="plog">Logo:</p><img class="logoplusinfo" src="./images/${user.avatar}" alt="log" /></div><div class="lst"><p class="cordones">Prénom:${user.prenom}</p><p class="cordones">Nom:${user.nom}</p><p class="cordones">Pseudo:${user.pseudo}</p><p class="cordones">date de naissance: 09/06/2000</p><p class="cordones">Âge: 22 ans</p></div></div></div><div class="fadePopup"></div>`;
+    let html = `<div class="popup"><div class="parametre"><i id="croix" class="fa-solid fa-circle-xmark pad"></i><div><p class="plog">Logo:</p><img class="logoplusinfo" src="./images/${user.avatar}" alt="log" /></div><div class="lst"><p class="cordones">Prénom:${user.prenom}</p><p class="cordones">Nom:${user.nom}</p><p class="cordones">Pseudo:${user.pseudo}</p><p class="cordones">date de naissance: 09/06/2000</p><p class="cordones">Âge: 22 ans</p></div></div></div><div class="fadePopup"></div>`;
     document.body.innerHTML += html;
     let fadePopup = document.querySelector(".fadePopup");
     fadePopup.addEventListener("click", closepop);
     let btnPlus = document.querySelector("#btnPlus");
     btnPlus.onclick = popup;
+    let croix = document.querySelector("#croix");
+    croix.addEventListener("click", closepop);
 }
 
 function closepop() {
@@ -182,4 +184,10 @@ function closepop() {
     let fadePopup = document.querySelector(".fadePopup");
     document.body.removeChild(popup);
     document.body.removeChild(fadePopup);
+    let abcd = document.querySelectorAll(".group");
+    for (let i = 0; i < abcd.length; i++) {
+        abcd[i].addEventListener("click", () => {
+            document.location.href = `messageprive.php?id=${users[i].id}`;
+        });
+    }
 }
