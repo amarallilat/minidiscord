@@ -58,7 +58,7 @@ a {
     max-height: 100%;
     width: fit-content;
     border-radius: 20px;
-    max-height: 100vh;
+    height: 100vh;
 }
 .titre {
     width: 100%;
