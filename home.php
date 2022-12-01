@@ -52,10 +52,8 @@ if(!isset($_SESSION["id"])) {
             </div>
 
             <div class="listedis">
-                <div>
-                    <p class="titre marg">Messages Publics</p>
-                    <div id="main" class="entremsg"></div>
-                </div>
+                <p class="titre marg">Messages Publics</p>
+                <div id="main" class="entremsg"></div>
                 <div class="form">
                     <input id="messagePublic" class="gris" type="text" name="Messages" placeholder="Écrire un message public..."/>
                     <input id="submitMessagePublic" class="bleu" type="submit" value="Envoyer"/>

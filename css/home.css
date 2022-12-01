@@ -2,6 +2,7 @@ body {
     max-width: 100%;
     font-family: "Itim", cursive;
     background-color: #36393f;
+    margin: 0;
 }
 
 h1 {
@@ -30,6 +31,12 @@ a {
     border-radius: 60px;
     height: 70px;
     margin-left: 5px;
+}
+
+.listedis {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .nav {
@@ -129,8 +136,8 @@ h2 {
 .entremsg {
     display: flex;
     flex-direction: column;
-    height: 80vh;
     max-width: 90%;
+    height: 100%;
     border: 1px solid black;
     margin-left: 20px;
     overflow-y: scroll;

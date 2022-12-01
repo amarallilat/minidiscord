@@ -1,6 +1,7 @@
 body {
     font-family: "Itim", cursive;
     background-color: #36393f;
+    margin: 0;
 }
 a {
     text-decoration: none;
@@ -50,10 +51,14 @@ a {
     color: red;
 }
 .list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     background-color: #202225;
-    height: fit-content;
+    max-height: 100%;
     width: fit-content;
     border-radius: 20px;
+    max-height: 100vh;
 }
 .titre {
     width: 100%;
@@ -155,8 +160,12 @@ img {
     border-radius: 30px;
 }
 
-.entremsgs {
+.entremsg {
     display: flex;
+    flex-direction: column;
+    height: 500px;
+    margin-bottom: 20px;
+    overflow-y: scroll;
 }
 
 .align {
