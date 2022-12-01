@@ -50,7 +50,7 @@ async function getAllUsers() {
 }
 
 function affichageUsers() {
-    let html = `<div><input class="recherches" type="text"placeholder="Recherches:"></div>`;
+    let html = ``;
     for (const user of users) {
         html += `<div class="amis group"><p>${user.prenom} ${user.nom}</p><img class="max" src="./images/${user.avatar}" alt="fffff"/></div>`;
     }

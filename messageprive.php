@@ -40,11 +40,8 @@
             </div>
             <div class="liste">
                 <div class="list">
-               
-                    <p class="titre"> Messages privés</p>
-                    
-
-                    <div id="listeUsers" class="entremsg">
+                    <div>
+                        <p class="titre"> Messages privés</p>
                         <div class="aligner">
                             
                            <input class="recherches" type="text"placeholder="Recherches:"
@@ -52,14 +49,11 @@
                            <div>
                              <i class="fa-solid fa-magnifying-glass"></i>
                            </div>
-                          
-                           
-                           
-                        
                         </div>
-                       
-
                     </div>
+                    
+
+                    <div id="listeUsers" class="entremsg"></div>
                      
                 </div>
 
