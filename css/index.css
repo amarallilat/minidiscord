@@ -1,7 +1,10 @@
 body {
     background-color: #f2cc78;
 }
-
+.modf {
+    width: 100px;
+    margin: 20px;
+}
 .titre {
     display: flex;
 }
@@ -32,15 +35,14 @@ p {
     font-family: "Itim", cursive;
 }
 .aranger {
-    display: grid;
-    width: 50%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     margin: auto;
 }
 
 .nomprenom {
     display: flex;
-    display: block ruby;
 }
 
 input {
@@ -70,22 +72,25 @@ input {
     color: black;
     background-color: #f2cc78;
     font-weight: bolder;
-    width: 200px;
+    width: fit-content;
     border-radius: 60px;
     cursor: pointer;
-    font-size: 17px;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    margin-bottom: 10px;
 }
 
 .deuxgris {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
 }
 
 h3 {
-    font-size: 17px;
+    width: 200px;
+    font-size: 12px;
     color: #b9bbbe;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-family: "Itim", cursive;
 }
 
@@ -94,6 +99,10 @@ h3 {
     justify-content: center;
 }
 .form {
-    width: 400px;
+    width: fit-content;
     font-family: "Itim", cursive;
 }
+
+/* debut animmation */
+
+/* fin annimation */
