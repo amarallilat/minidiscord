@@ -4,34 +4,31 @@ body {
 
 .titre {
     display: flex;
-    margin-bottom: 100px;
 }
 #espace {
     margin-left: 300px;
-    font-weight: bold;
-    font-size: 60px;
-
-    border-radius: 60px;
+    font-weight: bolder;
+    font-size: 30px;
+    border-radius: 50px;
     font-family: "Itim", cursive;
 }
 
 .grisclair {
     background-color: #36393f;
-    width: 40%;
-    font-size: 40px;
+    width: fit-content;
+    font-size: 20px;
     font-weight: center;
     border-radius: 60px;
-    height: 700px;
+    height: fit-content;
     margin-left: 10px;
     font-family: "Itim", cursive;
 }
 
 p {
     color: white;
-    font-weight: bold;
+    font-weight: bolder;
     display: flex;
     justify-content: center;
-    padding-top: 30px;
     font-family: "Itim", cursive;
 }
 .aranger {
@@ -47,12 +44,13 @@ p {
 }
 
 input {
-    font-size: 20px;
+    box-sizing: border-box;
+    font-size: 15px;
     color: #b9bbbe;
     background-color: #202225;
     border: none;
     height: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 22px;
     display: flex;
     justify-items: center;
     text-align: center;
@@ -75,18 +73,16 @@ input {
     width: 200px;
     border-radius: 60px;
     cursor: pointer;
-    font-size: 30px;
+    font-size: 17px;
 }
 
 .deuxgris {
     display: flex;
-}
-.deux {
-    margin-left: 270px;
+    justify-content: space-between;
 }
 
 h3 {
-    font-size: 28px;
+    font-size: 17px;
     color: #b9bbbe;
     display: flex;
     justify-content: center;
