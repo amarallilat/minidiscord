@@ -7,6 +7,10 @@ body {
 }
 .titre {
     display: flex;
+    justify-content: center;
+}
+h2 {
+    font-family: "Itim", cursive;
 }
 #espace {
     margin-left: 300px;
