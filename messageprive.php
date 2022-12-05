@@ -38,7 +38,7 @@
               <i id="deconnexion" class="fa-solid fa-5x fa-power-off"></i>
               </a>
             </div>
-            <div class="liste">
+            <div class="listecc">
                 <div class="list">
                     <div>
                         <p class="titre"> Messages privés</p>
