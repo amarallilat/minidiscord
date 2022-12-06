@@ -1,33 +1,37 @@
 body {
     background-color: #f2cc78;
 }
+
+.logo {
+    width: 200px;
+}
+
 .modf {
     width: 100px;
     margin: 20px;
 }
 .titre {
     display: flex;
-    justify-content: center;
 }
 h2 {
     font-family: "Itim", cursive;
 }
 #espace {
-    margin-left: 300px;
+    width: min-content;
     font-weight: bolder;
-    font-size: 30px;
+    height: min-content;
     border-radius: 50px;
     font-family: "Itim", cursive;
+    margin: 0;
 }
 
 .grisclair {
     background-color: #36393f;
     width: fit-content;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: center;
-    border-radius: 60px;
+    border-radius: 30px;
     height: fit-content;
-    margin-left: 10px;
     font-family: "Itim", cursive;
 }
 
@@ -47,11 +51,12 @@ p {
 
 .nomprenom {
     display: flex;
+    justify-content: space-around;
 }
 
 input {
     box-sizing: border-box;
-    font-size: 15px;
+    font-size: 25px;
     color: #b9bbbe;
     background-color: #202225;
     border: none;
@@ -62,6 +67,7 @@ input {
     text-align: center;
     border-radius: 60px;
     font-family: "Itim", cursive;
+    margin: 10px auto;
 }
 
 .reste {
@@ -87,15 +93,16 @@ input {
 
 .deuxgris {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
 }
 
 h3 {
     width: 200px;
-    font-size: 12px;
+    font-size: 25px;
     color: #b9bbbe;
     text-align: center;
     font-family: "Itim", cursive;
+    margin: auto;
 }
 
 .cnx {
@@ -103,7 +110,7 @@ h3 {
     justify-content: center;
 }
 .form {
-    width: fit-content;
+    width: 85%;
     font-family: "Itim", cursive;
 }
 

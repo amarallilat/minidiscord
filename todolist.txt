@@ -7,3 +7,6 @@ rajouter limage de la personne connecté en bas a gauche
 finir le front end de message privé
 
 faire la page de groupe
+
+
+faire front partout recyclage 

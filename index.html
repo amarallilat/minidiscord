@@ -16,164 +16,92 @@
     </head>
     <body>
         <div class="titre">
-            <h2 class="title">Mini-Discussion</h2>
-            <img src="./images/logo.png" width="200px" alt="" />
+            <img src="./images/logo.png" class="logo" alt="fffff" />
+            <h2 class="degradation mod" id="espace">
+                Bienvenue sur Mini-Discussion
+            </h2>
         </div>
-        <div class="cot">
-            <!-- début carrousel -->
-            <div class="frnt">
-                <div class="slideshow-container">
-                    <div class="mySlides fade">
-                        <img class="parm" src="./images/discission1.png" />
-                    </div>
+        <div class="deuxgris">
+            <div class="grisclair">
+                <p>Ha, te voilà !!!!</p>
+                <h3>Nous somme si heureux de te voir (Pas vrai) !!!!</h3>
+                <p>Connexion</p>
+                <div class="cnx">
+                    <input
+                        class="form"
+                        type="email"
+                        id="email"
+                        placeholder="Email"
+                        value="amar@allilat.fr"
+                    />
 
-                    <div class="mySlides fade">
-                        <img class="parm" src="./images/discussion.png" />
-                    </div>
-
-                    <div class="mySlides fade">
-                        <img class="parm" src="./images/disccussion3.png" />
-                    </div>
-                    <div class="mySlides fade">
-                        <img class="parm" src="./images/carrousel4.jpg" />
-                    </div>
-                    <div class="mySlides fade">
-                        <img class="parm" src="./images/carrousel5.jpg" />
-                    </div>
-                    <div class="mySlides fade">
-                        <img class="parm" src="./images/carrousel6.jpg" />
-                    </div>
-                    <div class="mySlides fade">
-                        <img class="parm" src="./images/carrousel7.jpg" />
-                    </div>
-                    <div class="mySlides fade">
-                        <img class="parm" src="./images/carrousel8.jpg" />
-                    </div>
-
-                    <div class="mySlides fade">
-                        <img class="parm" src="./images/index.jpeg" />
-                    </div>
-
-                    <div class="mySlides fade">
-                        <img class="parm" src="./images/zakarialogo.gif" />
-                    </div>
-                    <div class="mySlides fade">
-                        <img class="parm" src="./images/fatma1.jpg" />
-                    </div>
-                    <div class="mySlides fade">
-                        <img class="parm" src="./images/amar.jpeg" />
-                    </div>
-                    <div class="mySlides fade">
-                        <img class="parm" src="./images/abdou.jpg" />
-                    </div>
-                    <div class="mySlides fade">
-                        <img class="parm" src="./images/amine.jpeg" />
-                    </div>
-                </div>
-
-                <br />
-                <div class="alg">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
+                    <input
+                        class="form center"
+                        type="password"
+                        id="password"
+                        value="123"
+                        placeholder="Mot de Passe"
+                    />
+                    <input
+                        type="button"
+                        onclick="connexion()"
+                        class="bleu"
+                        value="Connexion"
+                    />
                 </div>
             </div>
+            <div class="grisclair">
+                <p>Créer un compte</p>
 
-            <!-- fin carrousel -->
+                <div class="aranger">
+                    <div class="nomprenom">
+                        <input
+                            class="modf"
+                            type="text"
+                            name="Nom"
+                            placeholder="Nom"
+                        />
 
-            <div class="deuxgris">
-                <div class="aceuille">
-                    <div class="grisclair">
-                        <p>Ha, te voilà !!!!</p>
-                        <h3>
-                            Nous somme si heureux de te voir (Pas vrai) !!!!
-                        </h3>
-                        <p>Connexion</p>
-                        <div class="cnx">
-                            <input
-                                class="form"
-                                type="email"
-                                id="email"
-                                placeholder="Email"
-                                value="amar@allilat.fr"
-                            />
-
-                            <input
-                                class="form center"
-                                type="password"
-                                id="password"
-                                value="123"
-                                placeholder="Mot de Passe"
-                            />
-                            <input
-                                type="button"
-                                onclick="connexion()"
-                                class="bleu"
-                                value="Connexion"
-                            />
-                        </div>
+                        <input
+                            class="modf"
+                            type="text"
+                            name="prenom"
+                            placeholder="Prénom"
+                        />
                     </div>
-                </div>
+                    <div class="reste">
+                        <input
+                            class="form"
+                            type="text"
+                            name="pseudo"
+                            placeholder="Pseudo"
+                        />
 
-                <div class="grisclair">
-                    <p>Créer un compte</p>
+                        <input
+                            class="form"
+                            type="text"
+                            name="email"
+                            placeholder="Email"
+                        />
 
-                    <div class="aranger">
-                        <div class="nomprenom">
-                            <input
-                                class="modf mod"
-                                type="text"
-                                name="Nom"
-                                placeholder="Nom"
-                            />
-
-                            <input
-                                class="modf mod"
-                                type="text"
-                                name="prenom"
-                                placeholder="Prénom"
-                            />
-                        </div>
-                        <div class="reste">
-                            <input
-                                type="text"
-                                name="pseudo"
-                                placeholder="Pseudo"
-                            />
-
-                            <input
-                                type="text"
-                                name="email"
-                                placeholder="Email"
-                            />
-
-                            <input
-                                type="text"
-                                name="password"
-                                placeholder="Mot de Passe"
-                            />
-                            <input
-                                type="text"
-                                name="password1"
-                                placeholder="Confirmation de Mot de Passe"
-                            />
-                        </div>
-                        <input class="bleu" type="submit" value="Inscription" />
+                        <input
+                            class="form"
+                            type="text"
+                            name="password"
+                            placeholder="Mot de Passe"
+                        />
+                        <input
+                            class="form"
+                            type="text"
+                            name="password1"
+                            placeholder="Confirmer le Mot de Passe"
+                        />
                     </div>
+                    <input class="bleu" type="submit" value="Inscription" />
                 </div>
             </div>
         </div>
+
         <script src="index.js"></script>
         <script src="carrousel.js"></script>
     </body>
