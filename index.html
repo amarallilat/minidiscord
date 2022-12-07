@@ -58,14 +58,14 @@
                         <input
                             class="modf"
                             type="text"
-                            name="Nom"
+                            id="nom"
                             placeholder="Nom"
                         />
 
                         <input
                             class="modf"
                             type="text"
-                            name="prenom"
+                            id="prenom"
                             placeholder="Prénom"
                         />
                     </div>
@@ -73,31 +73,36 @@
                         <input
                             class="form"
                             type="text"
-                            name="pseudo"
+                            id="pseudo"
                             placeholder="Pseudo"
                         />
 
                         <input
                             class="form"
                             type="text"
-                            name="email"
+                            id="emailInsc"
                             placeholder="Email"
                         />
 
                         <input
                             class="form"
                             type="text"
-                            name="password"
+                            id="passwordInsc"
                             placeholder="Mot de Passe"
                         />
                         <input
                             class="form"
                             type="text"
-                            name="password1"
+                            id="password2"
                             placeholder="Confirmer le Mot de Passe"
                         />
                     </div>
-                    <input class="bleu" type="submit" value="Inscription" />
+                    <input
+                        class="bleu"
+                        onclick="inscription()"
+                        type="button"
+                        value="Inscription"
+                    />
                 </div>
             </div>
         </div>

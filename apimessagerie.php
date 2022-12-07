@@ -44,6 +44,9 @@ switch ($_GET['action']) {
     case 'deconnexion':
         $retour = deconnexion();
         break;
+    case 'inscription':
+        $retour = inscription($_POST);
+        break;
     default:
         $retour = null;
         http_response_code(404);   
@@ -206,4 +209,17 @@ function getAllUsers() {
     $resultat = $select->fetchAll(PDO::FETCH_ASSOC);
     
     return $resultat;
+}
+
+function inscription($data) {
+    require('bddconfig.php');
+    $sql = "insert into utilisateur(nom,prenom,email,password,pseudo) values (:nom,:prenom,:email,:password,:pseudo)";
+    $insert = $pdo->prepare($sql);
+    $insert->execute([
+        "nom" => $data["nom"],
+        "prenom" => $data["prenom"],
+        "email" => $data["email"],
+        "password" => $data["password"],
+        "pseudo" => $data["pseudo"]
+    ]);
 }

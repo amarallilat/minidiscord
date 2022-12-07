@@ -1,5 +1,7 @@
 body {
-    background-color: #f2cc78;
+    background-image: url("../images/body.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .logo {
@@ -13,14 +15,12 @@ body {
 .titre {
     display: flex;
 }
-h2 {
-    font-family: "Itim", cursive;
-}
+
 #espace {
     width: min-content;
     font-weight: bolder;
+    font-size: 40px;
     height: min-content;
-    border-radius: 50px;
     font-family: "Itim", cursive;
     margin: 0;
 }
@@ -115,3 +115,19 @@ h3 {
 /* debut animmation */
 
 /* fin annimation */
+* {
+    margin: 0;
+}
+
+h2 {
+    font-family: "Itim", cursive;
+    /* background: linear-gradient(
+        81.84deg,
+        #0099ff -9.4%,
+        #a033ff 51.57%,
+        #ff5280 84.07%,
+        #ff7061 90.59%
+    );
+    color: transparent;
+    background-clip: text; */
+}

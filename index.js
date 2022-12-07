@@ -1,6 +1,13 @@
 let email = document.querySelector("#email");
 let password = document.querySelector("#password");
 let error = document.querySelector("#error");
+let nom = document.querySelector("#nom");
+let prenom = document.querySelector("#prenom");
+let pseudo = document.querySelector("#pseudo");
+let emailInsc = document.querySelector("#emailInsc");
+let passwordInsc = document.querySelector("#passwordInsc");
+let password2 = document.querySelector("#password2");
+
 email.addEventListener("keypress", enter);
 password.addEventListener("keypress", enter);
 
@@ -14,6 +21,7 @@ async function connexion() {
         body: donnees,
     };
     let envoi = await fetch(url, data);
+
     let retour = await envoi.json();
     let message = "";
     switch (retour) {
@@ -39,4 +47,21 @@ function enter(e) {
 
 function showError(message) {
     error.innerHTML = message;
+}
+
+async function inscription() {
+    let url = "apimessagerie.php?action=inscription";
+    let donnees = new FormData();
+    donnees.append("nom", nom.value);
+    donnees.append("prenom", prenom.value);
+    donnees.append("pseudo", pseudo.value);
+    donnees.append("emailInsc", emailInsc.value);
+    donnees.append("passwordInsc", passwordInsc.value);
+    donnees.append("password2", password2.value);
+
+    let data = {
+        method: "post",
+        body: donnees,
+    };
+    let envoi = await fetch(url, data);
 }
