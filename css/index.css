@@ -14,6 +14,7 @@ body {
 }
 .titre {
     display: flex;
+    justify-content: end;
 }
 
 #espace {
@@ -24,15 +25,18 @@ body {
     font-family: "Itim", cursive;
     margin: 0;
 }
-
+.grisclair:hover {
+    opacity: 0.6;
+}
 .grisclair {
-    background-color: #36393f;
+    opacity: 0.13;
     width: fit-content;
     font-size: 30px;
     font-weight: center;
     border-radius: 30px;
     height: fit-content;
     font-family: "Itim", cursive;
+    background-color: #6b5221;
 }
 
 p {
@@ -41,6 +45,8 @@ p {
     display: flex;
     justify-content: center;
     font-family: "Itim", cursive;
+    font-weight: bolder;
+    font-size: 50px;
 }
 .aranger {
     display: flex;
@@ -54,11 +60,14 @@ p {
     justify-content: space-around;
 }
 
+.grisclair:hover {
+    opacity: 0.8;
+}
 input {
     box-sizing: border-box;
     font-size: 25px;
-    color: #b9bbbe;
-    background-color: #202225;
+    color: #6b5221;
+    background-color: white;
     border: none;
     height: 40px;
     margin-bottom: 22px;
@@ -80,7 +89,8 @@ input {
     display: flex;
     justify-self: center;
     color: black;
-    background-color: #f2cc78;
+    opacity: 0.7;
+    background-color: #535c66;
     font-weight: bolder;
     width: fit-content;
     border-radius: 60px;
@@ -91,7 +101,7 @@ input {
 
 .deuxgris {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
 }
 
 h3 {
