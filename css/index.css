@@ -1,9 +1,14 @@
-body {
-    background-image: url("../images/body.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
 }
-
 .logo {
     width: 200px;
 }
@@ -14,7 +19,9 @@ body {
 }
 .titre {
     display: flex;
-    justify-content: end;
+    justify-content: center;
+    margin-top: 150px;
+    text-align: center;
 }
 
 #espace {
@@ -25,11 +32,8 @@ body {
     font-family: "Itim", cursive;
     margin: 0;
 }
-.grisclair:hover {
-    opacity: 0.6;
-}
+
 .grisclair {
-    opacity: 0.13;
     width: fit-content;
     font-size: 30px;
     font-weight: center;
@@ -60,9 +64,6 @@ p {
     justify-content: space-around;
 }
 
-.grisclair:hover {
-    opacity: 0.8;
-}
 input {
     box-sizing: border-box;
     font-size: 25px;
@@ -131,6 +132,7 @@ h3 {
 
 h2 {
     font-family: "Itim", cursive;
+    color: white;
     /* background: linear-gradient(
         81.84deg,
         #0099ff -9.4%,

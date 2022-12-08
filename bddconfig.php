@@ -3,14 +3,12 @@
 try {
     // On se connecte à MySQL et à notre base de données.
     $pdo = new PDO(
-        'mysql:host=localhost;dbname=messagerie;charset=utf8',
-        "admin",
-        "password"
+        'mysql:host=localhost:3306;dbname=messagerie;charset=utf8',
+        'root',
+        'admin',
     );
 } catch (PDOException $e) {
     // En cas d'erreur, on affiche un message et on arrête tout
     echo('Erreur : '.$e->getMessage());
 }
-
-
 
