@@ -34,6 +34,7 @@
 }
 
 .grisclair {
+    background-color: #666666;
     width: fit-content;
     font-size: 30px;
     font-weight: center;
@@ -50,7 +51,7 @@ p {
     justify-content: center;
     font-family: "Itim", cursive;
     font-weight: bolder;
-    font-size: 50px;
+    font-size: 30px;
 }
 .aranger {
     display: flex;
@@ -91,7 +92,7 @@ input {
     justify-self: center;
     color: black;
     opacity: 0.7;
-    background-color: #535c66;
+    background-color: #fab13b;
     font-weight: bolder;
     width: fit-content;
     border-radius: 60px;
@@ -102,7 +103,9 @@ input {
 
 .deuxgris {
     display: flex;
-    justify-content: start;
+    justify-content: end;
+    margin-top: 60px;
+    margin-right: 80px;
 }
 
 h3 {
