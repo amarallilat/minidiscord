@@ -213,13 +213,24 @@ function getAllUsers() {
 
 function inscription($data) {
     require('bddconfig.php');
-    $sql = "insert into utilisateur(nom,prenom,email,password,pseudo) values (:nom,:prenom,:email,:password,:pseudo)";
-    $insert = $pdo->prepare($sql);
-    $insert->execute([
-        "nom" => $data["nom"],
-        "prenom" => $data["prenom"],
-        "email" => $data["email"],
-        "password" => $data["password"],
-        "pseudo" => $data["pseudo"]
-    ]);
+    if(isset($data["nom"]) && !empty($data["nom"]) && isset($data["prenom"]) && !empty($data["prenom"])  && isset($data["emailInsc"]) && !empty($data["emailInsc"])  && isset($data["passwordInsc"]) && !empty($data["passwordInsc"])  && isset($data["password2"]) && !empty($data["password2"])  && isset($data["pseudo"]) && !empty($data["pseudo"])) {
+        if($data["passwordInsc"] == $data["password2"]) {
+            $passwordHash = password_hash($data["passwordInsc"],PASSWORD_DEFAULT);
+            $sql = "insert into utilisateur(nom,prenom,email,password,pseudo) values (:nom,:prenom,:email,:password,:pseudo)";
+            $insert = $pdo->prepare($sql);
+            $insert->execute([
+                "nom" => $data["nom"],
+                "prenom" => $data["prenom"],
+                "email" => $data["emailInsc"],
+                "password" => $passwordHash,
+                "pseudo" => $data["pseudo"]
+            ]);
+            $test = "vous etes bien inscrit";
+        } else {
+            $test =  "les mots de passes sont pas identiques(achete des lunettes)";
+        }
+    } else {
+        $test =  "des champs sont vides(envoi pas de formulaire vide ou je te frappe)";
+    }
+    return $test;
 }

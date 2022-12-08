@@ -64,4 +64,6 @@ async function inscription() {
         body: donnees,
     };
     let envoi = await fetch(url, data);
+    let reponse = await envoi.json();
+    console.log(reponse);
 }
