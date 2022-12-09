@@ -20,7 +20,7 @@
 .titre {
     display: flex;
     justify-content: center;
-    margin-top: 150px;
+    margin-top: 127px;
     text-align: center;
 }
 
@@ -35,11 +35,11 @@
 
 .grisclair {
     background-color: #666666;
-    width: fit-content;
+    width: min-content;
     font-size: 30px;
     font-weight: center;
     border-radius: 30px;
-    height: fit-content;
+    height: min-content;
     font-family: "Itim", cursive;
     margin-left: 10px;
 }
@@ -104,7 +104,7 @@ input {
 .deuxgris {
     display: flex;
     justify-content: end;
-    margin-top: 60px;
+    margin-top: -90px;
     margin-right: 80px;
 }
 
