@@ -72,7 +72,7 @@ a {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    background-color: #202225;
+    background-color: #638ebb;
     max-height: 100%;
     width: fit-content;
     border-radius: 20px;
@@ -150,21 +150,29 @@ h2 {
 .gris {
     text-align: start;
 }
+.bleu:hover {
+    background-color: #4b5813;
+    opacity: 1;
+}
 .bleu {
     display: flex;
     justify-self: center;
     color: black;
-    background-color: #f2cc78;
+    background-color: transparent;
+    border: 3px solid;
     font-weight: bolder;
     width: 200px;
     border-radius: 60px;
     text-align: center;
+    opacity: 0.7;
 }
 input {
     font-size: 30px;
-    color: #787878;
-    background-color: #d9d9d9;
-    border: none;
+    color: black;
+    background-color: transparent;
+    border: 3px solid black;
+    color: black;
+
     height: 40px;
     margin-top: 100px;
     margin-left: 20px;
