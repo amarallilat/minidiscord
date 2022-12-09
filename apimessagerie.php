@@ -213,17 +213,18 @@ function getAllUsers() {
 
 function inscription($data) {
     require('bddconfig.php');
-    if(isset($data["nom"]) && !empty($data["nom"]) && isset($data["prenom"]) && !empty($data["prenom"])  && isset($data["emailInsc"]) && !empty($data["emailInsc"])  && isset($data["passwordInsc"]) && !empty($data["passwordInsc"])  && isset($data["password2"]) && !empty($data["password2"])  && isset($data["pseudo"]) && !empty($data["pseudo"])) {
+    if(isset($data["nom"]) && !empty($data["nom"]) && isset($data["prenom"]) && !empty($data["prenom"]) && isset($data["date"]) && !empty($data["date"]) && isset($data["emailInsc"]) && !empty($data["emailInsc"])  && isset($data["passwordInsc"]) && !empty($data["passwordInsc"])  && isset($data["password2"]) && !empty($data["password2"])  && isset($data["pseudo"]) && !empty($data["pseudo"])) {
         if($data["passwordInsc"] == $data["password2"]) {
             $passwordHash = password_hash($data["passwordInsc"],PASSWORD_DEFAULT);
-            $sql = "insert into utilisateur(nom,prenom,email,password,pseudo) values (:nom,:prenom,:email,:password,:pseudo)";
+            $sql = "insert into utilisateur(nom,prenom,email,password,pseudo,date_naissance) values (:nom,:prenom,:email,:password,:pseudo,:date_naissance)";
             $insert = $pdo->prepare($sql);
             $insert->execute([
                 "nom" => $data["nom"],
                 "prenom" => $data["prenom"],
                 "email" => $data["emailInsc"],
                 "password" => $passwordHash,
-                "pseudo" => $data["pseudo"]
+                "pseudo" => $data["pseudo"],
+                "date_naissance" => $data["date"]
             ]);
             $test = "vous etes bien inscrit";
         } else {

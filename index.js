@@ -3,6 +3,7 @@ let password = document.querySelector("#password");
 let error = document.querySelector("#error");
 let nom = document.querySelector("#nom");
 let prenom = document.querySelector("#prenom");
+let date = document.querySelector("#date");
 let pseudo = document.querySelector("#pseudo");
 let emailInsc = document.querySelector("#emailInsc");
 let passwordInsc = document.querySelector("#passwordInsc");
@@ -54,6 +55,7 @@ async function inscription() {
     let donnees = new FormData();
     donnees.append("nom", nom.value);
     donnees.append("prenom", prenom.value);
+    donnees.append("date", date.value);
     donnees.append("pseudo", pseudo.value);
     donnees.append("emailInsc", emailInsc.value);
     donnees.append("passwordInsc", passwordInsc.value);
