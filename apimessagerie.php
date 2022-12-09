@@ -166,7 +166,7 @@ function selectInfoUser() {
     $id = $_POST["id_expediteur"];
 
     // on veut les message que la personne connecté a reçu de lui
-    $sql = "select id,avatar,nom,prenom,pseudo from utilisateur where id = :id";
+    $sql = "select id,avatar,nom,prenom,pseudo,date_naissance from utilisateur where id = :id";
     $select = $pdo->prepare($sql);
     $select->execute([
         "id" => $id
