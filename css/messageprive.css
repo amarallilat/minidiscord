@@ -1,7 +1,13 @@
-body {
-    font-family: "Itim", cursive;
-    background-color: #36393f;
-    margin: 0;
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
 }
 a {
     text-decoration: none;
@@ -19,7 +25,11 @@ a {
     width: 50px;
     border-radius: 50px;
 }
+.nav:hover {
+    opacity: 1;
+}
 .nav {
+    opacity: 0.7;
     display: block;
     background-color: #f2cc78;
     border-radius: 20px;
@@ -40,6 +50,7 @@ a {
     width: 100px;
     border-radius: 100px;
     height: 100px;
+    margin-top: 25px;
 }
 .logo {
     margin-top: 50px;
@@ -47,10 +58,17 @@ a {
     border-radius: 80px;
     height: 80px;
 }
+#deconnexion {
+    padding-left: 10px;
+}
 #deconnexion:hover {
     color: red;
 }
+.list:hover {
+    opacity: 1;
+}
 .list {
+    opacity: 0.5;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -259,10 +277,13 @@ button {
     height: 50px;
 }
 
-.fa-solid:hover {
-    color: red;
+.change {
+    color: white;
+    opacity: 0.6;
 }
-
+.change:hover {
+    opacity: 1;
+}
 .lst {
     padding-left: 60px;
     padding-top: 100px;

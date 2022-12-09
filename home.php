@@ -29,6 +29,14 @@ if(!isset($_SESSION["id"])) {
         <link rel="stylesheet" href="./css/home.css" />
     </head>
     <body>
+    <video
+            id="background-video"
+            autoplay
+            loop
+            muted
+            src="./images/privé.mp4"
+            type="video/mp4"
+        ></video>
         <div class="msgpub">
             <div class="nav">
                 <a href="travail5.html">

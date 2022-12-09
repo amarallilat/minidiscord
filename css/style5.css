@@ -40,6 +40,7 @@ a {
     width: 100px;
     border-radius: 100px;
     height: 100px;
+    margin-top: 25px;
 }
 .logo {
     margin-top: 50px;
@@ -50,7 +51,14 @@ a {
 #deconnexion:hover {
     color: red;
 }
+#deconnexion {
+    padding-left: 10px;
+}
+.list:hover {
+    opacity: 1;
+}
 .list {
+    opacity: 0.5;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -180,7 +188,13 @@ img {
     border: 1px solid black;
     overflow-y: scroll;
 }
-
+.change {
+    color: white;
+    opacity: 0.6;
+}
+.change:hover {
+    opacity: 1;
+}
 button {
     font-family: "Itim", cursive;
     color: black;

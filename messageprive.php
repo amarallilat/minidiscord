@@ -19,6 +19,14 @@
         <link rel="stylesheet" href="./css/messageprive.css" />
     </head>
     <body>
+          <video
+            id="background-video"
+            autoplay
+            loop
+            muted
+            src="./images/public.mp4"
+            type="video/mp4"
+        ></video>
         <div class="liste">
             <div class="nav">
          
@@ -47,7 +55,7 @@
                            <input class="recherches" type="text"placeholder="Recherches:"
                            >
                            <div>
-                             <i class="fa-solid fa-magnifying-glass"></i>
+                             <i class="fa-solid fa-2x fa-magnifying-glass change"></i>
                            </div>
                         </div>
                     </div>
