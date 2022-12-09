@@ -1,6 +1,21 @@
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+* {
+    margin: 0;
+}
+
 body {
     font-family: "Itim", cursive;
-    background-color: #36393f;
+    background-color: #5c81ad;
     margin: 0;
 }
 a {
@@ -21,7 +36,7 @@ a {
 }
 .nav {
     display: block;
-    background-color: #f2cc78;
+    background-color: #cebfd0;
     border-radius: 20px;
 }
 .pointier {
@@ -62,7 +77,7 @@ a {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    background-color: #202225;
+    background-color: #a5a6c3;
     max-height: 100%;
     width: fit-content;
     border-radius: 20px;
@@ -231,7 +246,8 @@ button {
 }
 
 .msgs {
-    background-color: #ffff;
+    background-color: #668ab2;
+    opacity: 0.7;
     height: fit-content;
     text-align: center;
     font-size: 30px;
