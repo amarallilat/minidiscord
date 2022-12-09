@@ -118,12 +118,13 @@ img {
 
 .discution {
     border: 3px solid;
-    background-color: transparent;
+    background-color: #e5e5e5;
     border-radius: 30px;
     height: fit-content;
     display: inline-flex;
     margin-bottom: 30px;
     width: fit-content;
+    opacity: 0.8;
 }
 
 h2 {
