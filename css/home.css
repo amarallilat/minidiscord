@@ -9,7 +9,9 @@
     bottom: 0;
     z-index: -1;
 }
-
+* {
+    margin: 0;
+}
 h1 {
     font-size: 40px;
     padding-left: 30px;
@@ -43,10 +45,13 @@ a {
     display: flex;
     flex-direction: column;
 }
-
+.nav:hover {
+    opacity: 1;
+}
 .nav {
+    opacity: 0.6;
     display: block;
-    background-color: #f2cc78;
+    background-color: #9db064;
     border-radius: 12px;
 }
 
@@ -59,6 +64,7 @@ a {
 
 #deconnexion {
     cursor: pointer;
+    padding-left: 10px;
 }
 
 #deconnexion:hover {
@@ -67,7 +73,7 @@ a {
 
 .titre {
     width: 100%;
-    color: white;
+    color: black;
     margin-bottom: 100px;
     font-family: "Itim", cursive;
     font-size: 40px;
@@ -111,7 +117,8 @@ img {
 }
 
 .discution {
-    background-color: #d9d9d9;
+    border: 3px solid;
+    background-color: transparent;
     border-radius: 30px;
     height: fit-content;
     display: inline-flex;
@@ -164,7 +171,7 @@ h2 {
     display: flex;
     justify-self: center;
     color: black;
-    background-color: #f2cc78;
+    background-color: transparent;
     font-weight: bolder;
     width: 200px;
     border-radius: 60px;
@@ -173,18 +180,18 @@ h2 {
 }
 
 .bleu:hover {
-    background-color: #f2cc78;
+    background-color: #b60000;
 }
 input {
     font-size: 30px;
-    color: #787878;
-    background-color: #d9d9d9;
-    border: none;
+    color: black;
+    border: 3px solid;
     height: 40px;
     margin-bottom: 15px;
     border-radius: 60px;
     font-family: "Itim", cursive;
     width: 500px;
+    background-color: transparent;
 }
 .form {
     display: flex;
