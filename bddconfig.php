@@ -4,8 +4,8 @@ try {
     // On se connecte à MySQL et à notre base de données.
     $pdo = new PDO(
         'mysql:host=localhost:3306;dbname=messagerie;charset=utf8',
-        'root',
         'admin',
+        'password',
     );
 } catch (PDOException $e) {
     // En cas d'erreur, on affiche un message et on arrête tout
