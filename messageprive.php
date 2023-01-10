@@ -84,6 +84,6 @@
                 <div class="info" id="user"></div>
             </div>
         </div>
-        <script src="messageprive.js"></script>
+        <script src="./js/messageprive.js"></script>
     </body>
 </html>

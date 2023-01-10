@@ -1,0 +1,32 @@
+body {
+    background-image: url("../images/luffi1.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.titre {
+    width: 300px;
+}
+
+.gri {
+    background-color: aliceblue;
+    opacity: 0.5;
+    padding: 10px;
+}
+
+.align {
+    background-color: aliceblue;
+    opacity: 0.5;
+    margin-top: 50px;
+}
+
+.list {
+    background-color: #3099d2;
+}
+.nav {
+    background-color: #eab662;
+}
+
+.bleu:hover {
+    background-color: #eab2ae;
+}

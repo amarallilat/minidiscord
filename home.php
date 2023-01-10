@@ -71,6 +71,7 @@ if(!isset($_SESSION["id"])) {
 
             <!-- <div id="aside" class="list"></div> -->
         </div>
-        <script src="home.js"></script>
+        <script src="./js/home.js"></script>
     </body>
+    
 </html>
